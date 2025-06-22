@@ -1,0 +1,85 @@
+/*
+  Correctly ordering the TailwindCSS directives at the top
+  of the file to fix the build error.
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font import is removed from here and handled in layout.js 
+  for better performance and to follow Next.js conventions.
+*/
+
+:root {
+  --primary-green: #3b8b5a;
+  --secondary-green: #2d6b45;
+  --accent-blue: #4a90e2;
+  --light-gray: #f8f9fa;
+  --dark-gray: #2c3e50;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b7280;
+  --background: #ffffff;
+  --card-bg: #ffffff;
+  --border-color: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  background: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-green);
+}
+
+/* Utility classes */
+.gradient-bg {
+  background: linear-gradient(
+    135deg,
+    var(--primary-green) 0%,
+    var(--secondary-green) 100%
+  );
+}
+
+.glass-effect {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.85
+  ); /* Slightly less transparent for better readability */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Softer border */
+}
+
+.section-padding {
+  padding: 80px 0;
+}

@@ -1,0 +1,21 @@
+<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(50, 50) scale(0.45)">
+    <path 
+      d="M 0,25 C 0,25 45,20 50,-15 C 55,-40 25,-60 0,-35"
+      fill="#4a90e2"
+    />
+    <path 
+      d="M 0,25 C 0,25 -45,20 -50,-15 C -55,-40 -25,-60 0,-35"
+      fill="#3b8b5a"
+    />
+    <path
+      d="M 0,-35 C -10, -15 -10, 10 0,25"
+      stroke="#ffffff"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      fill="none"
+      opacity="0.5"
+    />
+  </g>
+</svg>
